@@ -1,0 +1,25 @@
+/*
+    
+CIS166AA: Introduction to JavaScript
+Project 1
+
+Author: Sammy Bernstein
+Date:   March 28, 2024
+
+*/
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation > ul {
+   display: inline;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+
+/* Typography Styles */
+
+.descriptor {
+    line-height: 1.5em;
+}
