@@ -1,1 +1,1 @@
-alert(This page was created by Sammy Bernstein.);
+alert("This page was created by Sammy Bernstein.");
