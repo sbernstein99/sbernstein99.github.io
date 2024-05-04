@@ -17,7 +17,7 @@ const altText = {
 };
 
 /* Looping through images */
-imageFilenames.forEach(filename => {
+imageFileNames.forEach(filename => {
   const newImage = document.createElement('img');
   const imagePath = `images/${filename}`;
 
