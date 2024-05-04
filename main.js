@@ -28,13 +28,6 @@ for (const image of images) {
   });
 }
 
-/* Add click event listener to each thumbnail image */
- newImage.addEventListener('click', () => {
-    displayedImage.setAttribute('src', imagePath);
-    displayedImage.setAttribute('alt', altText[filename]);
-  });
-}); 
-
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
   if (btn.getAttribute('class') === 'dark') {
