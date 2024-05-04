@@ -17,12 +17,16 @@ const altText = {
 };
 
 /* Looping through images */
-imageFilenames.forEach(filename => {
+for (const image of images) {
   const newImage = document.createElement('img');
-  const imagePath = 'images/${image}';
-  newImage.setAttribute('src', imagePath);
-  newImage.setAttribute('alt', altText[filename]);
+  newImage.setAttribute('src', 'images/${image}');
+  newImage.setAttribute('alt', altText[image]);
   thumbBar.appendChild(newImage);
+  newImage.addEventListener('click', e => {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+  });
+}
 
 /* Add click event listener to each thumbnail image */
  newImage.addEventListener('click', () => {
@@ -30,11 +34,6 @@ imageFilenames.forEach(filename => {
     displayedImage.setAttribute('alt', altText[filename]);
   });
 }); 
-
-const newImage = document.createElement('img');
-newImage.setAttribute('src', 'images/${image}');
-newImage.setAttribute('alt', altText[image]);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
