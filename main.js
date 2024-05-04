@@ -19,7 +19,7 @@ const altText = {
 /* Looping through images */
 imageFileNames.forEach(filename => {
   const newImage = document.createElement('img');
-  const imagePath = `images/${filename}`;
+  const imagePath = 'images/${filename}';
 
   newImage.setAttribute('src', imagePath);
   newImage.setAttribute('alt', altText[filename]);
@@ -33,8 +33,8 @@ imageFileNames.forEach(filename => {
 });  
 
 const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
+newImage.setAttribute('src', 'images/${image}');
+newImage.setAttribute('alt', altText[image]);
 thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
