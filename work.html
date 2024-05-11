@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+
+    CIS166AA: Introduction to JavaScript
+    Final Project
+
+    Author: Sammy Bernstein
+    Date:   May 10, 2024
+
+-->    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Sammy Bernstein</title>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <!--Begin Navigation Links-->
+    <header>
+        <nav>
+            <label class="logo">Sammy Bernstein</label>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="work.html">Work</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <label id="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+         </nav>
+    </header> 
+    <main>
+    <!--Begin Main Content-->
+        <h1>Work</h1>
+        <div class="gridContainer">
+            <!--Description of Project 1-->
+            <div class="gridItem1">
+                <h2>Image Gallery</h2>
+                <div class="paragraph">
+                    <p>This project allows users to browse through a series of images displayed as thumbnails. When a thumbnail is clicked, the main image above updates to show the selected picture along with its description. Users can also toggle between a darken/lighten button. Clicking the "Darken" button darkens the image. Click the button below to view the completed project.</p>
+                    <a href="gallery.html" class="projectButton">Go to Page</a>
+                </div>
+            </div>
+            
+            <!--Description of Project 2-->
+            <div class="gridItem2">
+                <h2>Calculator</h2>
+                <div class="paragraph">
+                    <p>This project retrieves two input values and an operator. Based on the operator chosen, the function performs the respective mathematical operation and displays the result. I used parseInt() to convert input values into integers for calculations and then updated the HTML element with the calculated result using innerHTML. Click the button below to view the completed project.</p>
+                    <a href="calculator.html" class="projectButton">Go to Page</a>
+                </div>
+            </div>
+
+            <!--Description of Project 3-->
+            <div class="gridItem3">
+                <h2>Number Game</h2>
+                <div class="paragraph">
+                    <p>This project generates a random number between 1 and 100, and users can input their guesses to see if they've guessed correctly. The game keeps track of guess counts and displays feedback (such as "Too high" or "Too low") based on the user's input. If the user guesses the correct number within 10 attempts, they win. Click the button below to view the completed project.</p>
+                    <a href="number-game-errors.html" class="projectButton">Go to Page</a>
+                </div>
+            </div>    
+
+            <!--Description of Project 4-->
+            <div class="gridItem4">
+                <h2>Keyboard Events</h2>
+                <div class="paragraph">
+                    <p>In this project, you will see a circle on the canvas that you can control with your keyboard arrow keys. The circle moves around in response to the 'w', 's', 'a', and 'd' keys for up, down, left, and right movements respectively. I used event listeners to detect key presses and update the circle's position accordingly. Click the button below to view the completed project.</p>
+                    <a href="keyboard-events.html" class="projectButton">Go to Page</a>
+                </div>
+            </div>    
+
+            <!--Description of Project 5-->
+            <div class="gridItem5">
+                <h2>Color Changing Buttons</h2>
+                <div class="paragraph">
+                    <p>In this project, I created color-changing buttons that dynamically update the background color of my webpage. Each button is linked to a specific color using the data-color attribute. When you click on a button, it triggers a function that retrieves the color value associated with that button and sets it as the background color of the entire webpage. This interactive feature allows you to personalize your browsing experience with a simple click. Click the button below to view the completed project.</p>
+                    <a href="color-button-event.html" class="projectButton">Go to Page</a>
+                </div> 
+            </div>             
+        </div>
+
+    </main>
+    <!--Begin Footer-->
+    <footer>
+        <p>Designed and Developed by Sammy Bernstein | &copy; 2024 | <a href="mailto:sam2304803@maricopa.edu">Email Me</a></p>
+    </footer>
+    <!--Link to JavaScript file-->
+    <script src="main.js"></script>      
+</body>
+</html>
